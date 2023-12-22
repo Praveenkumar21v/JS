@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Data-types :</h4>
+<p>JavaScript is a dynamically typed (also called loosely typed) scripting language. In JavaScript, variables can receive different data types over time.</p>
+<p>The latest ECMAScript standard defines eight data types Out of which seven data types are Primitive(predefined) and one complex or Non-Primitive.</p>
+<br>
+
+<b>Primitive Data-types :</b>
+<p>The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.</p>
+<ul>
+    <li><b>Number :</b>
+    <p>All JavaScript numbers are stored as decimal numbers (floating point).</p>
+<p>Numbers can be written with, or without decimals</p>
+<b>Ex:</b><br><br>
+let num = 2; // Integer <br>
+let num2 = 1.3; // Floating point number <br>
+</li>
+<br>
+
+<li><b>Big Int :</b>
+<p>BigInt is a built-in object in JavaScript that provides a way to represent whole numbers larger than 253-1.</p>
+<b>Ex:</b><br><br>
+BigInt( number ) <br>
+or<br>
+Appending n to end of an integer literal<br>
+</li>
+<br>
+
+<li><b>String :</b>
+<p>A string (or a text string) is a series of characters like "John Doe". </p>
+ <p>Strings are written with quotes. You can use single or double quotes.</p>
+ <b>Ex:</b><br><br>
+
+ // Using double quotes:<br>
+let carName1 = "Volvo XC60";<br>
+<br>
+// Using single quotes:<br>
+let carName2 = 'Volvo XC60';<br>
+</li>
+<br>
+
+<li>
+    <b>Boolean :</b>
+    <p>The boolean type has only two values: true and false. This data type is used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”.</p>
+    <b>Ex:</b><br><br>
+    let isCoding = true; // yes<br>
+    let isOld = false;      // no<br>
+</li>
+<br>
+
+<li><b>Null :</b>
+<p>The special null value does not belong to any of the default data types. It forms a separate type of its own which contains only the null value</p>
+<b>Ex:</b><br><br>
+let age = null;
+</li>
+<br>
+
+<li><b>Undefined :</b>
+<p>Undefined is a type of Data type in JavaScript. When a variable is declared and not initialized or not assigned with any value. By default, the variable was stored with an Undefined value. </p>
+<b>Ex:</b><br><br>
+let variable = undefined;<br>
+// or<br>
+let no; <br>
+</li>
+<br>
+
+<li><b>Symbol :</b>
+<p>Symbols return unique identifiers that can be used to add unique property keys to an object that won’t collide with keys of any other code that might add to the object.</p>
+<b>Ex:</b><br><br>
+let id = Symbol("id");<br>
+<br>
+user[id] = 1;<br>
+<br>
+alert( user[id] ); // we can access the data using the symbol as the key<br>
+</li>
+<br>
+</ul>
+<br>
+<b>Non-Primitive Data-types :</b>
+<p>The data types that are derived from primitive data types of the JavaScript language are known as non-primitive data types. It is also known as derived data types or reference data types.</p>
+<ul> 
+<li><b>Object :</b>
+<p>Bunch of properties (key:value pair) in a container is called Object.</p>
+<b>Ex:</b><br><br>
+// Object:<br>
+const person = {firstName:"John", lastName:"Doe"};<br>
+<br>
+// Array object:<br>
+const cars = ["Saab", "Volvo", "BMW"];<br>
+<br>
+// Date object:<br>
+const date = new Date("2022-03-25");<br>
+</li>
+<br>
+</ul>
+<br>
+<b>Note:</b>
+<ul>
+<li><p>Primitive data-types always <q>call by value</q>.</p>
+<b>Call by Value -</b>If you have a function stored in a variable, you can call it by using the variable name followed by parentheses. 
+<br>
+<b>Ex:</b><br>
+function myFunction() <br>
+ { <br>
+    console.log('Hello, world!');<br>
+ } <br>
+  myFunction(); // prints 'Hello, world!' to the console <br></li><br>
+
+<li><p>Non-Primitive data-types always <q>call by reference</q>.</p>
+<b>Call by reference -</b>
+Call by Reference is a method in which it passes the reference or address of the actual parameter to the function's formal parameters, which means if there is any change in the values inside the function, it reflects that change in the actual values.
+<br>
+</li>
+<br>
+</ul>
+<h4>Operators :</h4>
+<p>JavaScript operators are symbols that are used to perform operations on operands.</p>
+<p>Operators are used to assign values, compare values, perform arithmetic operations, and more.</p> 
+<p>There are different types of JavaScript operators:</p>
+<ul>
+<li>Arithmetic Operators</li>
+<li>Comparison (Relational) Operators</li>
+<li>Bitwise Operators</li>
+<li>Logical Operators</li>
+<li>Assignment Operators</li>
+<li>Special Operators</li>
+</ul>
+<br>
+<b>Assignment Operators :</b>
+<p>JavaScript assignment operator is equal <b>(=)</b> which assigns the value of the right-hand operand to its left-hand operand. That is if a = b assigns the value of b to a.</p>
+<b>Ex:</b><br><br>
+
+let a = 2;<br>
+const b = 3;<br>
+<br>
+// Expected output: 2<br>
+console.log(a);<br>
+<br>
+// Expected output: 4<br>
+console.log(a = b + 1);<br>
+<br>
+
+<b>Atithmetic Operators :</b>
+<p>Arithmetic operators are used to perform arithmetic / mathematical calculations. </p>
+<b>Ex:</b><br><br>
+let x = 5;<br>
+let y = 3;<br>
+<br>
+// addition<br>
+console.log('x + y = ', x + y);  // 8<br>
+<br>
+// subtraction<br>
+console.log('x - y = ', x - y);  // 2<br>
+<br>
+// multiplication<br>
+console.log('x * y = ', x * y);  // 15<br>
+<br>
+// division<br>
+console.log('x / y = ', x / y);  // 1.6666666666666667<br>
+<br>
+// remainder<br>
+console.log('x % y = ', x % y);   // 2<br>
+<br>
+// increment<br><br>
+// pre-increment <br>
+console.log('++x = ', ++x); // x is now 6<br><br>
+// post-increment<br>
+console.log('x++ = ', x++); // prints 6 and then increased to 7<br><br>
+console.log('x = ', x);     // 7<br>
+<br>
+// decrement<br><br>
+// pre-decrement <br>
+console.log('--x = ', --x); // x is now 6<br><br>
+// post-decrement<br>
+console.log('x-- = ', x--); // prints 6 and then decreased to 5<br><br>
+console.log('x = ', x);     // 5<br>
+<br>
+//exponentiation<br>
+console.log('x ** y =', x ** y);<br>
+
+
+<br>
+
+<h4>type of :</h4>
+<p><q>typeof</q> is a JavaScript keyword that will return the type of a variable when you call it. You can use this to validate function parameters or check if variables are defined. </p>
+<b>Ex:</b><br>
+typeof "John"                 // Returns "string" <br>
+typeof 3.14                   // Returns "number"<br>
+typeof NaN                    // Returns "number"<br>
+typeof false                  // Returns "boolean"<br>
+typeof [1,2,3,4]              // Returns "object"<br>
+typeof {name:'John', age:34}  // Returns "object"<br>
+typeof new Date()             // Returns "object"<br>
+typeof function () {}         // Returns "function"<br>
+typeof myCar                  // Returns "undefined" *<br>
+typeof null                   // Returns "object"<br>
+<br>
+<b>Note :</b> More than one type of is <q>String</q>.
+
+</body>
+</html>
