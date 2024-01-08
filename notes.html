@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        li{
+            list-style:square;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Containers</h1>
+<p>In JavaScript, you can declare variables with the var, let, and const keywords.</p>
+<br>
+    <h3><u>var</u>:</h3>
+    <p> <b>var</b> was the primary way to declare variables in JavaScript. <br>
+         The scope of a var variable is either the function in which it is declared (function scope) or the global scope if it's declared outside any function.
+    </p>
+
+    <b>Ex:</b> <br><br>
+    function example() {<br>
+        if (true) {<br>
+          var x = 10;<br>
+          console.log(x); // Output: 10<br>
+        }<br>
+        console.log(x); // Output: 10<br>
+      }<br>
+      <br>
+      example();<br>
+      <br>
+      <p>In this example, the variable x is declared using var. It has a function scope, so it is accessible both inside and outside the if block. This behaviour is known as hoisting, where the variable declaration is moved to the top of the function. Therefore, even though x is declared inside the if block, it can still be accessed outside of it.</p>
+
+    <br>
+    <br>
+    <h3><u>let</u>:</h3>
+    <p><b>let</b> was introduced in ECMAScript 6 (ES6) to address some of the issues with var. <br>
+         The scope of a let variable is limited to the block in which it is declared (block scope), which is typically denoted by a set of curly braces { }.</p>
+
+         <b>Ex:</b> <br><br>
+         function example() {<br>
+             if (true) {<br>
+               let y = 20;<br>
+               console.log(x); // Output: 10<br>
+             }<br>
+             console.log(y); // ReferenceError: y is not defined<br>
+           }<br>
+           <br>
+           example();<br>
+           <br>
+     <p>In this example, the variable y is declared using let. It has block scope, which means it is only accessible within the block it's declared in (inside the if block). When we try to access y outside of the block, we get a ReferenceError because y is not defined in that scope. This behaviour helps prevent unintended variable leakage and makes the code easier to understand.</p>
+<br>
+<br>
+<h3><u>const</u>:</h3>
+<p><b>const</b> is also introduced in ES6 and stands for "constant." Variables declared with const are block-scoped, just like let, but they have an additional characteristic, their value cannot be reassigned once it has been assigned. <br>
+     In other words, const variables are immutable.</p>
+
+     <b>Ex:</b> <br><br>
+     function example() { <br>
+        const z = 30;<br>
+        console.log(z); // Output: 30<br>
+        <br>
+        z = 40; // TypeError: Assignment to constant variable<br>
+      }<br>
+      <br>
+      example();<br>
+      <br>
+      <p>In this example, the variable z is declared using const. It is also block-scoped like let. However, the difference is that const variables cannot be reassigned once they are assigned a value. In the example, when we try to assign a new value to z, we get a TypeError because we are trying to modify a constant variable. This behaviour ensures that the value of z remains constant throughout the code, promoting immutability and preventing accidental changes.</p>
+    <br><br>
+    
+    <h2>To Summarize :</h2>
+    <ul>
+        <li>Use <b>var</b> if you want function-scoped variables that can be hoisted.</li> <br>
+        <li>Use <b>let</b> if you want block-scoped variables that can be reassigned.</li> <br>
+        <li>Use <b>const</b> if you want block-scoped variables that are constant and cannot be reassigned.</li>
+        <br>
+    </ul>
+    </body>
+</html>
