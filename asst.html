@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+class employee{
+ constructor(name,designation,Exp,salary){       
+      this.name=name;
+      this.designation=designation; 
+      this.Exp=Exp;
+      this.salary=salary;
+    console.log(this);
+    }
+}
+ 
+ 
+class person{
+ constructor(name,gender,age,city){
+     this.name=name;
+     this.gender=gender;
+     this.age=age;
+     this.city=city;
+     console.log(this);
+}
+}
+ class computer{
+     constructor(brand,color,RAM,SSD,generation){
+         this.brand=brand;
+         this.color=color;
+         this.RAM=RAM;
+         this.SSD=SSD;
+         this.generation=generation;
+              console.log(this);
+     }
+ }
+
+class car{
+     constructor(company,model,color,year,FuelType,SeatingCapacity){
+     this.company=company;
+     this.model=model;
+     this.color=color;
+     this.year=year;
+     this.FuelType=FuelType;
+     this.SeatingCapacity=SeatingCapacity;
+    console.log(this);
+}
+}
+ class remote{
+     constructor(name,id,batteries,range){
+     this.name=name;
+     this.id=id;
+     this.batteries=batteries;
+     this.range=range;
+     console.log(this);
+
+     }
+ }
+
+    const a= new employee('Jack','Engineer',1,30000);
+    const b= new person('Praveen','male',21,'Karimnagar');
+    const c= new computer('hp','silver','8GB','256GB','intel-6')
+    const d= new car('ferrari',488,'red',2015,'petrol',5)
+const e=new remote('LG','lg123456',2,'6m')
+    </script>
+</body>
+</html>
